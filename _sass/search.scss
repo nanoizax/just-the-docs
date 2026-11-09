@@ -1,5 +1,16 @@
 // Search input and autocomplete
 
+// Sidebar search (mobile only)
+.sidebar-search-mobile {
+  display: block;
+  margin-top: $sp-4;
+  margin-bottom: $sp-4;
+
+  @include mq(md) {
+    display: none; // Hide on desktop - uses header search instead
+  }
+}
+
 .search {
   position: relative;
   z-index: 2;

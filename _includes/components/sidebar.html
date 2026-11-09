@@ -17,6 +17,12 @@
     </button>
   </div>
 
+  {% if site.search_enabled != false %}
+    <div class="sidebar-search-mobile">
+      {% include components/search_header.html %}
+    </div>
+  {% endif %}
+
   {% include_cached components/site_nav.html %}
 
   {% capture nav_footer_custom %}
